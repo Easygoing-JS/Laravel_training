@@ -14,7 +14,9 @@
     */
 
     Route::get('/', function () {
-        return view('welcome');
+//        return view('welcome');
+        return response()->json(request()->get('text'));
+
     });
 
     Route::get('/start', function () {
